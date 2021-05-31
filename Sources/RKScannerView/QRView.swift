@@ -63,7 +63,7 @@ class QRView: UIView {
             innerImageView.widthAnchor.constraint(equalToConstant: 230),
             innerImageView.heightAnchor.constraint(equalToConstant: 230)
         ])
-        innerImageView.image = UIImage(named: imageName)
+        innerImageView.image = UIImage(named: imageName, in: .module, compatibleWith: nil)
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
