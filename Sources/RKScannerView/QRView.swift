@@ -19,7 +19,7 @@ class QRView: UIView {
     
     @IBInspectable
     var imageName: String = "qrInnerImage" {
-        didSet { innerImageView.image = UIImage(named: imageName) }
+        didSet { innerImageView.image = UIImage(named: imageName, in: .module, compatibleWith: nil) }
     }
     
     @IBInspectable
