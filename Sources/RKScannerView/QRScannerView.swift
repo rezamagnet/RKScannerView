@@ -48,6 +48,7 @@ public class QRScannerView: UIView {
     }
     
     private func setup() {
+        backgroundColor = .clear
         addSubview(qrView)
         qrView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
